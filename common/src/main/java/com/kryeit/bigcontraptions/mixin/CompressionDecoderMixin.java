@@ -16,6 +16,6 @@ public class CompressionDecoderMixin {
 
     @Inject(method = "<init>", at = @At("RETURN"))
     private void onConstructorReturn(CallbackInfo ci) {
-        MAXIMUM_COMPRESSED_LENGTH = 10 * 1024 * 1024;
+        MAXIMUM_COMPRESSED_LENGTH = 100 * 1024 * 1024;
     }
 }
