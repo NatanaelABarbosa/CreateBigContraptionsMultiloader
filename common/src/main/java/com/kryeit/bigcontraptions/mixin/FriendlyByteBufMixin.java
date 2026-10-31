@@ -10,6 +10,6 @@ public class FriendlyByteBufMixin {
 
     @ModifyConstant(method = "readNbt(Lio/netty/buffer/ByteBuf;)Lnet/minecraft/nbt/CompoundTag;", constant = @Constant(longValue = 2097152L))
     private static long bigPackets(long constant) {
-        return 10 * 1024 * 1024;
+        return 100 * 1024 * 1024;
     }
 }
